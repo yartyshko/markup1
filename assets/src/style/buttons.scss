@@ -1,0 +1,38 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-size: 16px;
+    min-width: 102px;
+    height: 44px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 18px;
+    transition: background-color 0.5s ease-in;
+    &--green {
+        background-color: $green-color;
+        color: $white-color;
+        &:hover{
+            background-color: $green-light-color;
+            color: $white-color;
+        }
+    }
+    &--white {
+        background-color: $white-color;
+        color: $dark-blue-color;
+        &:hover{
+            color: $dark-blue-color;
+        }
+    }
+    &--transparent {
+        border: 1px solid $border-button-color;
+        color: var(--font-color-logo);
+        &:hover{
+            background-color: var(--bg-tr-btn-hover);
+        }
+    }
+}
+.button-holder{
+    text-align: center;
+}
